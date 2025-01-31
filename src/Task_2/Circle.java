@@ -1,5 +1,8 @@
 package Task_2;
 
+import static java.lang.Math.PI;
+import static java.lang.Math.pow;
+
 public class Circle extends Shape implements Perimeter, Area {
 
     private double radius;
@@ -11,12 +14,12 @@ public class Circle extends Shape implements Perimeter, Area {
 
     @Override
     public double getArea() {
-        return Math.PI * Math.pow(radius, 2);
+        return PI * pow(radius, 2);
     }
 
     @Override
     public double getPerimeter() {
-        return 2 * Math.PI * radius;
+        return 2 * PI * radius;
     }
 
     @Override
