@@ -23,6 +23,6 @@ public class Rectangle extends Shape implements Perimeter, Area {
 
     @Override
     public void printResult() {
-        System.out.printf("Прямоугольник [ Периметр = %.2f, Площадь = %.2f, Цвет фона = %s, Цвет границ = %s ]%n", getPerimeter(), getArea(), colorBackground, colorBorder);
+        System.out.printf("Прямоугольник [ Периметр = %.2f, Площадь = %.2f, Цвет фона = %s, Цвет границ = %s ]%n", getPerimeter(), getArea(), super.getColorBackground(), super.getColorBorder());
     }
 }
