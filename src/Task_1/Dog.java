@@ -16,16 +16,16 @@ public class Dog extends Animal{
     @Override
     public void run(int lenght) {
         if (lenght <= 0 || lenght > 500)
-            System.out.println("Собака " + name + " не может пробежать это растояние " + lenght + " метров");
+            System.out.println("Собака " + super.getName() + " не может пробежать это растояние " + lenght + " метров");
         else
-            System.out.println("Собака " + name + " пробежала " + lenght + " метров");
+            System.out.println("Собака " + super.getName() + " пробежала " + lenght + " метров");
     }
 
     @Override
     public void swim(int lenght) {
         if (lenght <= 0 || lenght > 10)
-            System.out.println("Собака " + name + " не может проплыть это растояние " + lenght + " метров");
+            System.out.println("Собака " + super.getName() + " не может проплыть это растояние " + lenght + " метров");
         else
-            System.out.println("Собака " + name + " проплыла " + lenght + " метров");
+            System.out.println("Собака " + super.getName() + " проплыла " + lenght + " метров");
     }
 }

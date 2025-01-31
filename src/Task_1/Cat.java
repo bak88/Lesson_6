@@ -20,9 +20,9 @@ public class Cat extends Animal {
     @Override
     public void run(int lenght) {
         if (lenght <= 0 || lenght > 200)
-            System.out.println("Кот " + name + " не может пробежать это растояние " + lenght + " метров");
+            System.out.println("Кот " + super.getName() + " не может пробежать это растояние " + lenght + " метров");
         else
-            System.out.println("Кот " + name + " пробежал " + lenght + " метров");
+            System.out.println("Кот " + super.getName() + " пробежал " + lenght + " метров");
     }
 
     @Override
@@ -46,7 +46,7 @@ public class Cat extends Animal {
 
 
     public void getIsFed() {
-        System.out.println("Кот " + name + " сыт = " + isFed);
+        System.out.println("Кот " + super.getName() + " сыт = " + isFed);
     }
 
     public static void getCountCat() {

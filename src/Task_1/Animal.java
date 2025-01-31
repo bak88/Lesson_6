@@ -2,12 +2,16 @@ package Task_1;
 
 public abstract class Animal {
 
-    protected String name;
+    private String name;
     private static int countAnimal;
 
     public Animal(String name) {
         this.name = name;
         countAnimal++;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public static void getCountAnimal() {
